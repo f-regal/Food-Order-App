@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+
 .header {
-    background-color: rgb(59, 59, 139);
+    background-color: rgb(47, 47, 48);
     height: 100px;
-    overflow: hidden;
+    width: 100%;
 }
 
 .title {
@@ -18,3 +22,61 @@
     width: 200px;
     height: 50px;
 }
+
+
+ .container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.container img {
+    width: 500px;
+    height: 350px;
+    object-fit: none;
+    border-radius: 50px;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.mealintro {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    color: white;
+}
+
+.mealintrotitle {
+    padding-top: 10px;
+}
+
+#contain {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  #navi,
+  #infoi {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #infoi {
+    z-index: 10;
+  }
+
+
+
+
+  
+
+
+
