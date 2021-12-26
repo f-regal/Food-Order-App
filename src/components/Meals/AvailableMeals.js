@@ -8,7 +8,7 @@ const AvailableMeals = () => {
         {id: 1,
         name: "Burger1",
         description: 'Finest Burger on the ends',
-        price: 22.99
+        price: 21.99
         },
         {id: 2,
         name: "Burger2",
@@ -18,25 +18,22 @@ const AvailableMeals = () => {
         {id: 3,
         name: "Burger3",
         description: 'Smash Burger on the ends',
-        price: 22.99
+        price: 23.99
         },
         {id: 4,
         name: "Burger4",
         description: 'Big Burger on the ends',
-        price: 22.99
+        price: 24.99
         }
     ];
 
-     //const mealList = DUMMY_MEALS.map(meal => <MealItem>{meal.name}</MealItem>);
-     //const mealList = DUMMY_MEALS.map(meal => <li>{meal.name}</li>);
-
 
     return (
-      <section className="">
-          <ul>
-            {DUMMY_MEALS.map(meal => <MealItem name={meal.name} id={meal.id} desc={meal.description} price={meal.price}></MealItem>)}
-          </ul>
-      </section>)
+      <div className={classes.mealListSection}>
+        <ul>
+          {DUMMY_MEALS.map(meal => <MealItem name={meal.name} id={meal.id} desc={meal.description} price={meal.price}></MealItem>)}
+        </ul>
+      </div>)
   };
 
 

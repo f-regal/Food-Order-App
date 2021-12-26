@@ -1,0 +1,13 @@
+.mealListSection {
+    background-color: rgb(252, 252, 252);
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 60%;
+    margin: auto;
+    height: 700px;
+    margin-top: 10px;
+}
+
+.mealListItems {
+background-color: red;
+}
