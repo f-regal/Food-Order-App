@@ -20,3 +20,41 @@
   color: #ad5502;
   font-size: 1.25rem;
 }
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #222222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 45px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 75px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #303030;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.amount {
+  width: 100px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+
