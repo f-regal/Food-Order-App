@@ -1,0 +1,9 @@
+.cart {
+        background-color: rgb(252, 252, 252);
+        border: 5px solid black;
+        border-radius: 25px;
+        width: 550px;
+        margin: auto;
+        height: 350px;
+        margin-top: 10px;
+    }

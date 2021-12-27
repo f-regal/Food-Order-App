@@ -3,6 +3,7 @@ import classes from './MealItem.module.css'
 import MealInputForm from "./MealInputForm";
 
 const MealItem = (props) => {
+  
 
   const price = `$${props.price}`
     return (
@@ -13,9 +14,7 @@ const MealItem = (props) => {
               <div className={classes.description}>{props.desc}</div>
               <div className={classes.price}>{price}</div>
             </div>
-
             <MealInputForm/>
-
           </li>
       </Fragment>
     );
