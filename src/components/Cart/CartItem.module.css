@@ -1,0 +1,75 @@
+.cartitem {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #ad5502;
+    margin-left: -20px;
+}
+  
+.cartitem h3 {
+margin: 0 0 0.25rem 0;
+}
+ 
+  
+.price {
+margin-top: 0.25rem;
+margin-right: 20px;
+font-weight: bold;
+color: #ad5502;
+font-size: 1.25rem;
+}
+
+.amount {
+width: 50px;
+padding: 2px 5px;
+margin-right: 310px;
+text-align: center;
+border-radius: 5px;
+margin-top: 35px;
+font-style: bold;
+font-size: 15px;
+font-weight: bold;
+}
+
+.amount::-webkit-outer-spin-button,
+.amount::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.plusminus {
+    display: flex;
+    padding: 2px 5px;
+    margin-right: 310px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: -60px;
+    font-style: bold;
+}
+
+.plus {
+    cursor: pointer;
+    width: 50px;
+    margin-right: 10px;
+    border: black solid 2px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.minus {
+    cursor: pointer;
+    width: 50px;
+    border: black solid 2px;   
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+  
+  
+  
+  
+  
