@@ -3,7 +3,7 @@ import classes from './Header.module.css'
 import burgers from '../UI/Images/burgersPic.jpg';
 import HeaderCartButton from "./HeaderCartButton";
 
-const Header = () => {
+const Header = (props) => {
 
 
 
@@ -11,7 +11,7 @@ const Header = () => {
         <React.Fragment>
             <header className={classes.header} >
                 <h1 className={classes.title}>ReactMeals</h1>
-                <HeaderCartButton />
+                <HeaderCartButton onCartShow = {props.onCartDisplay}/>
             </header>
 
             <div className={classes.container}>
