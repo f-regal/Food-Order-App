@@ -4,14 +4,12 @@
         border-radius: 25px;
         width: 550px;
         margin: auto;
-        height: 320px;
+        height: auto;
         margin-top: 10px;
-
-        position: fixed;
+        position: absolute;
         top: 30vh;
         left: 35%;
         z-index: 10;
-        overflow: hidden;
 }
 
 .totalTitle {

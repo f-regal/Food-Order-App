@@ -12,7 +12,21 @@ const Cart = (props) => {
       {id: 2,
       name: "Burger2",
       price: 22.99
-      }
+      },
+      {
+      id: 3,
+      name: "Burger3",
+      price: 25.99
+      },
+      {
+        id: 4,
+        name: "Burger4",
+        price: 289.99
+      },
+      {id: 1,
+        name: "Burger1",
+        price: 21.99
+      },
   ];
 
   
