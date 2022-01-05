@@ -2,7 +2,7 @@ import React from "react";
 import classes from './HeaderCartButton.module.css'
 import CartIcon from "../Cart/CartIcon";
 import { Fragment } from "react/cjs/react.production.min";
-import CartContext from "../../store/cart-context";
+
 
 
 const HeaderCartButton = (props) => {

@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import AvailableMeals from "./AvailableMeals";
 
-const Meals = () => {
+const Meals = (props) => {
     return (
       <Fragment>
-          <AvailableMeals />
+          <AvailableMeals CartItems = {props.onCartUpdate} />
       </Fragment>
     );
   };

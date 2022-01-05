@@ -2,7 +2,7 @@ import classes from './AvailableMeals.module.css'
 import MealItem from "./MealItem";
 
 
-const AvailableMeals = () => {
+const AvailableMeals = (props) => {
 
     const DUMMY_MEALS = [
         {id: 1,
@@ -31,7 +31,7 @@ const AvailableMeals = () => {
     return (
       <div className={classes.mealListSection}>
         <ul>
-          {DUMMY_MEALS.map(meal => <MealItem name={meal.name} id={meal.id} desc={meal.description} price={meal.price}></MealItem>)}
+          {DUMMY_MEALS.map(meal => <MealItem name={meal.name} id={meal.id} desc={meal.description} price={meal.price} CartItems = {props.CartItems} ></MealItem>)}
         </ul>
       </div>)
   };
