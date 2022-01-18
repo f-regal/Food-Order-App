@@ -12,7 +12,7 @@ const CartItem = (props) => {
               <div className={classes.price}>{price}</div>
             </div>
             <div>
-              <input className={classes.amount} type="text" id="amount" name="amount" value={"x 2"} readonly></input>
+              <input className={classes.amount} type="text" id="amount" name="amount" value={"x 2"} readOnly></input>
             </div>
             <div className={classes.plusminus}>
                 <button className={classes.plus}>+</button>

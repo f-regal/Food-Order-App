@@ -1,5 +1,6 @@
 import classes from './AvailableMeals.module.css'
 import MealItem from "./MealItem";
+import { useState } from 'react';
 
 
 const AvailableMeals = (props) => {
@@ -27,11 +28,27 @@ const AvailableMeals = (props) => {
         }
     ];
 
+    const [EnteredAmount, setEnteredAmount] = useState('')
+    const AmountChangeHandler = (event) => {
+        setEnteredAmount(event.target.value);
+        
+    }
+
+    const AmoundSubmitHandler = (event) => {
+        event.preventDefault();
+        console.log(EnteredAmount);
+        //console.log(key);
+    }
+
+    // const MealIdentifier = () => {
+    //   console.log()
+    // }
+
 
     return (
       <div className={classes.mealListSection}>
         <ul>
-          {DUMMY_MEALS.map(meal => <MealItem name={meal.name} id={meal.id} desc={meal.description} price={meal.price} CartItems = {props.CartItems} ></MealItem>)}
+          {DUMMY_MEALS.map(meal => <MealItem name={meal.name} key={meal.id} id={meal.id} desc={meal.description} price={meal.price} onAmountChange={AmountChangeHandler} onAmountSubmit={AmoundSubmitHandler}  ></MealItem>)}
         </ul>
       </div>)
   };

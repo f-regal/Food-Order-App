@@ -1,5 +1,6 @@
 
 import classes from './MealInputForm.module.css'
+//import {useState} from 'react';
 
 const MealInputForm = (props) => {
 
@@ -17,8 +18,8 @@ const MealInputForm = (props) => {
 
     return (
               <form>
-                    <label for="amount"><strong>Amount</strong></label>
-                    <input className={classes.amount} type="number" id="amount" name="amount" onChange={props.onAmountChange}></input><br></br>
+                    <label><strong>Amount</strong></label>
+                    <input className={classes.amount} type="number" id={props.id} name="amount" onChange={props.onAmountChange}></input><br></br>
                     <button className={classes.button} onClick={props.onAmountSubmit}>
                         <span className={classes.icon}>+</span>
                         <span className={classes.add}>

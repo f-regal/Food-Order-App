@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import React, {useState} from 'react';
+import React from 'react';
 import classes from './MealItem.module.css'
 import MealInputForm from "./MealInputForm";
 
@@ -8,18 +8,18 @@ const MealItem = (props) => {
   //const updateCart = props.CartItems();
 
 
-  const [EnteredAmount, setEnteredAmount] = useState('')
-  const AmountChangeHandler = (event) => {
-      setEnteredAmount(event.target.value);
+  // const [EnteredAmount, setEnteredAmount] = useState('')
+  // const AmountChangeHandler = (event) => {
+  //     setEnteredAmount(event.target.value);
       
-  }
+  // }
 
-  const AmoundSubmitHandler = (event) => {
-      event.preventDefault();
-      console.log(EnteredAmount);
-      console.log(props.name);
-      props.CartItems(props.name);
-  }
+  // const AmoundSubmitHandler = (event) => {
+  //     event.preventDefault();
+  //     console.log(EnteredAmount);
+  //     console.log(props.name);
+  //     props.CartItems(props.name);
+  // }
   
 
   
@@ -34,7 +34,7 @@ const MealItem = (props) => {
               <div className={classes.description}>{props.desc}</div>
               <div className={classes.price}>{price}</div>
             </div>
-            <MealInputForm onAmountChange={AmountChangeHandler} onAmountSubmit = {AmoundSubmitHandler}/>
+            <MealInputForm onAmountChange={props.onAmountChange} onAmountSubmit={props.onAmountSubmit} id={props.id}/>
           </li>
       </Fragment>
     );

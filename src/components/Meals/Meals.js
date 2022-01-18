@@ -4,7 +4,7 @@ import AvailableMeals from "./AvailableMeals";
 const Meals = (props) => {
     return (
       <Fragment>
-          <AvailableMeals CartItems = {props.onCartUpdate} />
+          <AvailableMeals />
       </Fragment>
     );
   };

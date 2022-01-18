@@ -32,7 +32,7 @@ const Cart = (props) => {
 
         <div className={classes.cart}>
           <ul>
-              {NEW_MEALS.map(newmeal => <CartItem name={newmeal.name} id={newmeal.id} price={newmeal.price}></CartItem>)}
+              {NEW_MEALS.map(newmeal => <CartItem name={newmeal.name} key={newmeal.id} price={newmeal.price}></CartItem>)}
           </ul>
 
           <div className={classes.total}>
