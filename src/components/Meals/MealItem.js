@@ -2,28 +2,21 @@ import { Fragment } from "react";
 import React from 'react';
 import classes from './MealItem.module.css'
 import MealInputForm from "./MealInputForm";
+import { useContext } from "react/cjs/react.development";
+import CartContext from "../../store/cart-context";
 
 const MealItem = (props) => {
   const price = `$${props.price}`;
-  //const updateCart = props.CartItems();
 
+  const cartCtx = useContext(CartContext);
 
-  // const [EnteredAmount, setEnteredAmount] = useState('')
-  // const AmountChangeHandler = (event) => {
-  //     setEnteredAmount(event.target.value);
-      
-  // }
-
-  // const AmoundSubmitHandler = (event) => {
-  //     event.preventDefault();
-  //     console.log(EnteredAmount);
-  //     console.log(props.name);
-  //     props.CartItems(props.name);
-  // }
-  
-
-  
-  
+  const addToCartHandler = (amount) => {
+      cartCtx.addItems({
+        amount: amount,
+        name: props.name,
+        id: props.id,
+        price: props.price})
+  }
 
 
     return (
@@ -34,7 +27,7 @@ const MealItem = (props) => {
               <div className={classes.description}>{props.desc}</div>
               <div className={classes.price}>{price}</div>
             </div>
-            <MealInputForm onAmountChange={props.onAmountChange} onAmountSubmit={props.onAmountSubmit} id={props.id}/>
+            <MealInputForm onAmountChange={props.onAmountChange} id={props.id} onAddToCart={addToCartHandler}/>
           </li>
       </Fragment>
     );
