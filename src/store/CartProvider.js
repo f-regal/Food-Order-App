@@ -6,10 +6,24 @@ const defaultCartState = {
     totalAmount: 0
 };
 
+// if (action.type === 'ADD') {
+//     if (state.items.includes(action.item)) {
+//         let updatesItems = 1;
+//         let updatedTotalAmount = 2;
+//     } else {
+//         updatedItems = state.items.concat(action.item);
+//         updatedTotalAmount = state.totalAmount + (action.item.price * action.item.amount);
+//     }
+    
+//     return {
+//         items: updatedItems,
+//         totalAmount: updatedTotalAmount
+//     }
+
 const cartReducer = (state, action) => {
     if (action.type === 'ADD') {
-        const updatedItems = state.items.concat(action.item);
-        const updatedTotalAmount = state.totalAmount + (action.item.price * action.item.amount);
+            const updatedItems = state.items.concat(action.item);
+            const updatedTotalAmount = state.totalAmount + (action.item.price * action.item.amount);
         return {
             items: updatedItems,
             totalAmount: updatedTotalAmount

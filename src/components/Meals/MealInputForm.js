@@ -8,6 +8,7 @@ const MealInputForm = (props) => {
     
     const submitFormHandler = (event) => {
         event.preventDefault();
+
         const enteredAmount = amountRef.current.value; //Using refs to extract the Amount from the Input
         const enteredAmountNumber = +enteredAmount; //This was done to convert the enteredAmount into a number
         console.log(enteredAmountNumber);
@@ -27,7 +28,7 @@ const MealInputForm = (props) => {
     return (
               <form onSubmit={submitFormHandler}>
                     <label><strong>Amount</strong></label>
-                    <input ref={amountRef} className={classes.amount} type="number" id={props.id} name="amount" onChange={props.onAmountChange}></input><br></br>
+                    <input ref={amountRef} className={classes.amount} type="number" id={props.id} name="amount"></input><br></br>
                     <button className={classes.button} onClick={props.onAmountSubmit}>
                         <span className={classes.icon}>+</span>
                         <span className={classes.add}>

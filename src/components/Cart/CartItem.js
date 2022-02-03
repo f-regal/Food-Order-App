@@ -1,7 +1,10 @@
 import { Fragment } from 'react';
 import classes from './CartItem.module.css';
+import { useContext } from 'react';
+import CartContext from '../../store/cart-context';
 const CartItem = (props) => {
   
+    const cartCtx = useContext(CartContext);
     const price = `$${props.price}`;
 
     return (
@@ -12,7 +15,7 @@ const CartItem = (props) => {
               <div className={classes.price}>{price}</div>
             </div>
             <div>
-              <input className={classes.amount} type="text" id="amount" name="amount" value={"x 2"} readOnly></input>
+              <input className={classes.amount} type="text" id="amount" name="amount" value={props.amount} readOnly></input>
             </div>
             <div className={classes.plusminus}>
                 <button className={classes.plus}>+</button>
