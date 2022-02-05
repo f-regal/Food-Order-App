@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import classes from './CartItem.module.css';
-import { useContext } from 'react';
-import CartContext from '../../store/cart-context';
+//import { useContext } from 'react';
+//import CartContext from '../../store/cart-context';
 const CartItem = (props) => {
   
-    const cartCtx = useContext(CartContext);
-    const price = `$${props.price}`;
+    //const cartCtx = useContext(CartContext);
+    const price = `$${props.price.toFixed(2)}`;
 
     return (
         <Fragment>

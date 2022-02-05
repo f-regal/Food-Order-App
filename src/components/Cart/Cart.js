@@ -6,27 +6,6 @@ import CartItem from './CartItem';
 
 const Cart = (props) => {
 
-  //   const NEW_MEALS = [
-  //     {id: 1,
-  //     name: "Burger1",
-  //     price: 21.99
-  //     },
-  //     {id: 2,
-  //     name: "Burger2",
-  //     price: 22.99
-  //     },
-  //     {
-  //     id: 3,
-  //     name: "Burger3",
-  //     price: 25.99
-  //     },
-  //     {
-  //     id: 4,
-  //     name: "Burger4",
-  //     price: 289.99
-  //     }
-  // ];
-
   const cartCtx = useContext(CartContext);
   const totalAmount = cartCtx.totalAmount;
   const hasItems = cartCtx.items.length > 0;
@@ -42,7 +21,7 @@ const Cart = (props) => {
 
           <div className={classes.total}>
             <h3 className={classes.totalTitle}>Total Amount</h3>
-            <div className={classes.totalPrice}>${totalAmount}</div>
+            <div className={classes.totalPrice}>${totalAmount.toFixed(2)}</div>
           </div>
 
           <div className={classes.closeorder}>
