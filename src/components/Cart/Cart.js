@@ -9,6 +9,14 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const totalAmount = cartCtx.totalAmount;
   const hasItems = cartCtx.items.length > 0;
+
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItems({...item, amount: 1});
+  }
+
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItems(id);
+  }
   
     return (
       <Fragment>
@@ -16,7 +24,17 @@ const Cart = (props) => {
 
         <div className={classes.cart}>
           <ul>
-              {cartCtx.items.map(item => <CartItem name={item.name} key={item.id} price={item.price} amount={item.amount}></CartItem>)}
+              {
+              cartCtx.items.map(item => 
+              <CartItem 
+                name={item.name} 
+                key={item.id} 
+                price={item.price} 
+                amount={item.amount} 
+                onAdd={cartItemAddHandler.bind(null, item)} 
+                onRemove={cartItemRemoveHandler.bind(null, item.id)}>
+              </CartItem>)
+              }
           </ul>
 
           <div className={classes.total}>
