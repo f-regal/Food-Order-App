@@ -14,17 +14,17 @@ const AvailableMeals = (props) => {
         {id: 2,
         name: "Honest",
         description: 'Honest beef, red onion relish, smoked bacon, cheddar, lettuce and pickles with homemade rosemary salted chips',
-        price: 22.99
+        price: 24.99
         },
         {id: 3,
         name: "Tribute",
         description: "Honest beef, bacon, American cheese, burger sauce, French's mustard, pickles, onion and lettuce with homemade rosemary salted chips ",
-        price: 23.99
+        price: 28.99
         },
         {id: 4,
         name: "Chilli",
         description: 'Honest beef, bacon, chilli cheese, Honest hot sauce, shoestring fries, red onion, lettuce and pickled red jalapenos with chips ',
-        price: 24.99
+        price: 31.99
         }
     ];
 
