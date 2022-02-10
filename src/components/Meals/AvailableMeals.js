@@ -7,23 +7,23 @@ const AvailableMeals = (props) => {
 
     const DUMMY_MEALS = [
         {id: 1,
-        name: "Burger1",
-        description: 'Finest Burger on the ends',
+        name: "Beef",
+        description: 'Honest beef, red onion relish and lettuce with homemade rosemary salted chips',
         price: 21.99
         },
         {id: 2,
-        name: "Burger2",
-        description: 'Best Burger on the ends',
+        name: "Honest",
+        description: 'Honest beef, red onion relish, smoked bacon, cheddar, lettuce and pickles with homemade rosemary salted chips',
         price: 22.99
         },
         {id: 3,
-        name: "Burger3",
-        description: 'Smash Burger on the ends',
+        name: "Tribute",
+        description: "Honest beef, bacon, American cheese, burger sauce, French's mustard, pickles, onion and lettuce with homemade rosemary salted chips ",
         price: 23.99
         },
         {id: 4,
-        name: "Burger4",
-        description: 'Big Burger on the ends',
+        name: "Chilli",
+        description: 'Honest beef, bacon, chilli cheese, Honest hot sauce, shoestring fries, red onion, lettuce and pickled red jalapenos with chips ',
         price: 24.99
         }
     ];
